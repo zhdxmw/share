@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Card, Button } from "antd";
 interface StateType {
   num: number;
@@ -50,6 +51,7 @@ class LifeCycles extends React.Component<any, StateType> {
     return (
       <div>
         <Card>
+          <Link to="/template?id=cc">templates</Link>
           <p>nums: {num}</p>
           <Button type="primary" onClick={this.addNums}>
             LifeCycles
